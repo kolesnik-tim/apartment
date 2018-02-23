@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('../fonts/iconfont.eot');
+  src: url('../fonts/iconfont.eot?#iefix') format('eot'),
+    url('../fonts/iconfont.woff2') format('woff2'),
+    url('../fonts/iconfont.woff') format('woff'),
+    url('../fonts/iconfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$icon-arrow: "\EA01";
+$icon-like: "\EA02";
+$icon-location: "\EA03";
+$icon-logo--footer: "\EA04";
+$icon-logo: "\EA05";
+$icon-metro: "\EA06";
+$icon-stop: "\EA07";
+$icon-telegram: "\EA08";
+$icon-users: "\EA09";
+$icon-vk: "\EA0A";
+
+
+%icon {
+  font-family: "iconfont";
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: auto;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon {
+  @extend %icon;
+  display: inline-block;
+}
+
+.icon-arrow:before { content: $icon-arrow; }
+.icon-like:before { content: $icon-like; }
+.icon-location:before { content: $icon-location; }
+.icon-logo--footer:before { content: $icon-logo--footer; }
+.icon-logo:before { content: $icon-logo; }
+.icon-metro:before { content: $icon-metro; }
+.icon-stop:before { content: $icon-stop; }
+.icon-telegram:before { content: $icon-telegram; }
+.icon-users:before { content: $icon-users; }
+.icon-vk:before { content: $icon-vk; }

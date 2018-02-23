@@ -1,0 +1,45 @@
+.intro
+  background: url('../img/header__bg.png') no-repeat
+  background-size: cover
+  padding: 180px 0
+  padding-top: 220px
+  position: relative
+  +r(767)
+    padding-top: 350px
+  h1
+    font-size: 36px
+    font-weight: bold
+    line-height: 1.28
+    color: $white
+    padding-bottom: 40px
+  form
+    display: flex
+    justify-content: center
+    +r(1024)
+      display: block
+    input
+      padding: 25px 75px
+      border-top-right-radius: 5px
+      border-bottom-right-radius: 5px
+      background-image: linear-gradient(to bottom, $greenish-teal, $tealish-two)
+      font-family: Roboto
+      font-size: 15px
+      font-weight: bold
+      color: $white
+      outline: none
+      transition: all 0.3s
+      cursor: pointer
+      &:hover
+        color: $charcoal-grey
+      +r(1024)
+        width: 100%
+        padding: 25px 0
+        border-top-right-radius: 0
+        border-bottom-left-radius: 5px
+  &__btn
+    position: absolute
+    bottom: 30px
+    left: 50%
+    i
+      font-size: 40px
+      color: $white

@@ -1,0 +1,32 @@
+.description
+  padding-top: 90px
+  padding-bottom: 60px
+  position: relative
+  &:before
+    content: ''
+    width: 983px
+    height: 983px
+    background-image: linear-gradient(to bottom, $pale-grey, $white)
+    position: absolute
+    left: -41%
+    top: 170px
+    border-radius: 100%
+    z-index: 1
+    +r(1024)
+      display: none
+  &__content
+    max-width: 740px
+    width: 100%
+    box-sizing: border-box
+    margin: 0 auto
+    position: relative
+    z-index: 2
+    &__video
+      img
+        width: 100%
+    p
+      line-height: 1.62
+      color: $battleship-grey
+      padding-bottom: 40px
+      
+      

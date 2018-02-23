@@ -1,0 +1,116 @@
+.ads
+  position: relative
+  z-index: 44
+  &__block
+    border-radius: 8px
+    background-color: $white
+    border: solid 1px $white-two
+    transition: all 0.3s
+    +r(1024)
+      margin-bottom: 20px
+      box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.15)
+    &:hover
+      box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.15)
+      border: solid 1px transparent
+      .swiper-pagination-bullet, .swiper-button-next, .swiper-button-prev
+        opacity: 1 !important
+    &__swiper
+      .swiper-container
+        width: 100%
+        height: 100%
+        border-top-left-radius: 8px
+        border-top-right-radius: 8px
+        .swiper-slide
+          max-height: 245px
+          height: 100%
+          overflow: hidden
+          img
+            height: 100%
+          +r(767)
+            max-height: 100%
+            height: auto
+            img
+              width: 100%
+        .swiper-pagination-bullet
+          background: $white
+          opacity: 1
+          width: 10px
+          height: 10px
+          opacity: 0
+          transition: all 0.3s
+          +r(1024)
+            opacity: 1
+        .swiper-pagination-bullet-active
+          background: $white
+        .swiper-button-next, .swiper-button-prev
+          width: 60px
+          height: 100%
+          top: 9%
+          display: flex
+          justify-content: center
+          align-items: center
+          opacity: 0
+          transition: all 0.3s
+          +r(1024)
+            opacity: 1
+          i
+            font-size: 30px
+            color: $white
+        .swiper-button-next
+          background: linear-gradient(to right, rgba(0, 0, 0, 0), $black-50)
+          right: 0
+        .swiper-button-prev
+          background: linear-gradient(to right, $black-50, rgba(0, 0, 0, 0))
+          left: 0
+          i
+            transform: rotate(180deg)
+    &__content
+      padding: 20px
+      &__title
+        a
+          font-size: 18px
+          font-weight: bold
+          line-height: 1.39
+          color: $charcoal-grey
+          transition: all 0.3s
+          &:hover
+            border-bottom: 1px solid $charcoal-grey
+      &__info
+        border-bottom: 2px solid $white-two
+        border-top: 2px solid $white-two
+        margin: 20px 0
+        padding-top: 20px
+        padding-right: 15px
+        position: relative
+        p
+          font-size: 15px
+          color: $charcoal-grey
+          padding-left: 30px
+          position: relative
+          padding-bottom: 20px
+          i
+            color: $greenish-teal
+            position: absolute
+            left: 0
+            &.icon-metro
+              left: -1px
+            &.icon-location
+              left: 1px
+          &.ads__block__content__info--lease
+            position: absolute
+            right: 10px
+            top: 20px
+      &__bottom
+        a
+          font-size: 15px
+          line-height: 2.33
+          color: $charcoal-grey
+          position: relative
+          cursor: pointer
+          &:hover
+            color: $greenish-teal
+          i
+            color: $greenish-teal
+            position: absolute
+            left: -25px
+            top: 1px

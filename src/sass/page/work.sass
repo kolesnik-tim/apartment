@@ -1,0 +1,107 @@
+.work
+  position: relative
+  &:before
+    content: ''
+    width: 983px
+    height: 983px
+    background-image: linear-gradient(to bottom, $pale-grey, $white)
+    position: absolute
+    left: -41%
+    top: 60%
+    border-radius: 100%
+    z-index: 1
+    +r(767)
+      display: none
+  .container
+    z-index: 55
+  &__tabs
+    position: relative
+    &__caption
+      position: relative
+      z-index: 55
+      +r(1024)
+        display: flex
+        justify-content: space-between
+      +r(500)
+        flex-direction: column
+      li
+        padding: 30px 40px
+        display: inline-block
+        margin-bottom: 20px
+        transition: all 0.5s
+        font-weight: bold
+        line-height: 2.0
+        font-size: 18px
+        color: $charcoal-grey
+        position: relative
+        cursor: pointer
+        +r(1024)
+          padding: 30px 0
+          width: 48%
+          text-align: center
+        +r(500)
+          width: 100%
+        &.active
+          background-color: $white
+          box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.15)
+        &:before
+          content: ''
+          position: absolute
+          right: -9px
+          top: 50%
+          transform: translateY(-50%)
+          width: 0
+          height: 0
+          border-top: 12px solid transparent
+          border-left: 10px solid $white
+          border-bottom: 12px solid transparent
+          +r(1024)
+            right: auto
+            top: auto
+            transform: none
+            bottom: -16px
+            left: 50%
+            transform: translateX(-50%)
+            transform: rotate(90deg)
+          +r(500)
+            display: none
+    &__content
+      opacity: 0
+      padding-left: 80px
+      position: absolute
+      top: 0
+      transition: all 0.3s
+      z-index: 1
+      padding-top: 40px
+      +r(1024)
+        position: relative
+        display: none
+      &.active
+        position: relative
+        opacity: 1
+        display: block
+      h3
+        font-size: 18px
+        font-weight: bold
+        line-height: 1.5
+        color: $charcoal-grey
+        padding-bottom: 20px
+        position: relative
+        span
+          position: absolute
+          left: -100px
+          background-image: linear-gradient(to bottom, $greenish-teal, $tealish-two), linear-gradient($greenblue, $greenblue)
+          font-family: 'Roboto'
+          font-size: 100px
+          line-height: 0.25
+          text-align: center
+          -webkit-background-clip: text
+          background-clip: text
+          height: 90px
+          color: transparent
+          padding-top: 33px
+          +r(1024)
+            left: -70px
+      p
+        line-height: 1.62
+        padding-bottom: 60px

@@ -1,0 +1,48 @@
+.option
+  position: relative
+  &:before
+    content: ''
+    width: 1000px
+    height: 1000px
+    background-image: linear-gradient(to top, $pale-grey, $white)
+    position: absolute
+    right: -41%
+    border-radius: 100%
+    z-index: 1
+    +r(767)
+      display: none
+  .container
+    position: relative
+    z-index: 2
+  &__block
+    +r(767)
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__img
+      width: 125px
+      height: 125px
+      display: flex
+      justify-content: center
+      align-items: center
+      border-radius: 160px
+      box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1)
+      background: $white
+      overflow: hidden
+      img
+        width: 86px
+      &--width
+        img
+          width: 70px
+    &__text
+      padding-bottom: 50px
+      h4
+        font-size: 18px
+        font-weight: bold
+        line-height: 1.5
+        color: $charcoal-grey
+        padding-top: 40px
+        padding-bottom: 20px
+      p
+        line-height: 1.62
+        color: $battleship-grey

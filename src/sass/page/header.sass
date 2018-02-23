@@ -1,0 +1,34 @@
+.header
+  position: absolute
+  top: 0
+  width: 100%
+  z-index: 55
+  border-bottom: 1px solid #95959c
+  &__block
+    height: 100%
+    &--mobile
+      +r(767)
+        text-align: center
+    &__logo
+      width: 165px
+      img
+        width: 100%
+        +r(767)
+          max-width: 300px
+    &__location
+      display: inline-block
+    &__get
+      a
+        padding: 27px 25px
+        display: inline-block
+        font-size: 16px
+        font-weight: bold
+        line-height: 2.25
+        color: $white
+        position: relative
+        top: 1px
+        &.active
+          border-bottom: 3px solid $greenish-teal
+    &__user
+      padding: 35px 25px
+      display: inline-block
