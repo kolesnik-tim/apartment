@@ -1,6 +1,12 @@
 .footer
   background-image: linear-gradient(to bottom, $pale-grey, $white)
-  padding-bottom: 60px
+  &__variants
+    .footer--index
+      display: none !important
+    .footer--variants
+      display: block
+  .footer--index
+    padding-bottom: 45px
   h4
     font-size: 16px
     line-height: 1.56
@@ -47,3 +53,73 @@
         i
           color: $charcoal-grey
         
+  
+.footer--variants
+  background-color: $charcoal-grey-two
+  padding: 45px 0 40px
+  display: none
+  .footer__top
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+    padding-bottom: 50px
+    &__block
+      h4
+        font-size: 13px
+        font-weight: 600
+        color: rgba(255, 255, 255, 0.3)
+        padding-bottom: 20px
+        padding-top: 0
+      a
+        font-size: 13px
+        padding-bottom: 20px
+        color: $white
+        display: block
+        border: none
+        &:hover
+          color: $greenish-teal
+      &__logo
+        i
+          color: $battleship-grey
+          max-width: 170px
+          font-size: 60px
+          height: auto
+          padding-top: 30px
+        p
+          padding-top: 20px
+      &__social
+        a
+          width: 36px
+          height: 36px
+          border-radius: 4px
+          background-image: linear-gradient(to bottom, $greenish-teal, $tealish-two)
+          margin-right: 15px
+          display: inline-flex !important
+          justify-content: center
+          align-items: center
+          border-bottom: none !important
+          padding: 0
+          .icon-telegram
+            font-size: 14px
+          i
+            display: inline-flex
+            justify-content: center
+            align-items: center
+            border-bottom: none
+            color: $white
+            transition: all 0.3s
+          &:hover
+            i
+              color: $charcoal-grey
+  .footer__bottom
+    padding-top: 40px
+    a
+      font-size: 13px
+      line-height: 2.69
+      color: $white
+      &:hover
+          color: $greenish-teal
+    p
+      line-height: 2.77
+      color: rgba(255, 255, 255, 0.3)
+      font-size: 13px
+
+          

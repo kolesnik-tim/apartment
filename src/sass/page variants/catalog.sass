@@ -1,0 +1,89 @@
+.catalog
+  background-color: $pale-grey-three
+  &__navigation
+    padding: 20px 0
+    a
+      font-size: 13px
+      font-weight: 500
+      color: $black-two
+      &:hover
+        color: $tealish-three
+      &:last-child
+        &:hover
+          color: $black-two
+          cursor: default
+      i
+        color: $tealish-three
+        padding: 0 15px
+  &__sorting
+    padding-bottom: 30px
+    &__block
+      display: flex
+      justify-content: space-between
+      align-items: center
+      +r(767)
+        display: block
+      p
+        font-size: 13px
+        font-weight: 500
+        color: rgba(49, 49, 49, 0.5)
+        display: block
+        +r(767)
+          padding-bottom: 20px
+      a
+        font-size: 13px
+        font-weight: 500
+        color: $black-two
+        height: 25px
+        width: 142px
+        display: flex
+        justify-content: center
+        align-items: center
+        &:hover
+          color: $tealish-three
+        +r(767)
+          width: 33%
+          display: inline-block
+          text-align: center
+        +r(500)
+          display: block
+          width: 100%
+          margin-bottom: 10px
+        &.active
+          border-radius: 12px
+          border: double 2px transparent
+          background-image: linear-gradient($pale-grey-three, $pale-grey-three), radial-gradient(circle at top left, #42d79f 0%, #36d1b2 50%, #27c8ca 100%)
+          background-origin: border-box
+          background-clip: content-box, border-box
+          &:hover
+            color: $black-two
+  &__filter
+    &__tabs
+      &__caption
+        display: flex
+        justify-content: center
+        border-radius: 7.1px
+        overflow: hidden
+        border: solid 2px $tealish-three
+        background-color: $pale-grey-three
+        li
+          width: 50%
+          padding: 15px 0
+          text-align: center
+          transition: all .3s
+          color: $charcoal-grey
+          font-size: 16px
+          line-height: 1.19
+          cursor: pointer
+          &:hover
+            color: $tealish-three
+          &.active
+            background: $tealish-three
+            color: $white
+            &:hover
+              color: $white
+              cursor: default
+      &__content
+        display: none
+        &.active
+          display: block

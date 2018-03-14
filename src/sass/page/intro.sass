@@ -6,17 +6,23 @@
   position: relative
   +r(767)
     padding-top: 350px
+  &__mobile
+    display: none
+    +r(767)
+      display: block
   h1
     font-size: 36px
     font-weight: bold
     line-height: 1.28
     color: $white
     padding-bottom: 40px
-  form
+  .form--top
     display: flex
     justify-content: center
     +r(1024)
       display: block
+    +r(767)
+      display: none
     select
       width: 100%
       background: $white

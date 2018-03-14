@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>variants</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;amp;subset=cyrillic-ext" rel="stylesheet">
+  </head>
+
+  <body>
+    <!--BEGIN out-->
+    <div class="out">
+      <!--BEGIN header-->
+      <header class="header header__variants">
+        <div class="container">
+          <div class="row between-xs">
+            <div class="col-md-4 col-sm-6 col-xs-12 center-xs start-sm">
+              <div class="header__block">
+                <div class="row middle-xs">
+                  <div class="col-sm-6 col-xs-5"><a href="index.html" class="header__block__logo"><img src="img/logo.svg" alt=""></a></div>
+                  <div class="col-sm-6 col-xs-7">
+                    <div class="header__block__location">
+                      <p>Санкт-Петербург<i class="fa fa-angle-down"></i></p>
+                      <div class="header__block__location__menu"><a href="#">Санкт-Петербург2</a><a href="#">Санкт-Петербург4</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-12 center-xs last-xs">
+              <div class="header__block">
+                <div class="header__block__get"><a href="#" class="active">Снять</a><a href="#">Сдать</a></div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 end-xs last-md">
+              <div class="header__block header__block--mobile">
+                <div class="header__block__user"><a href="#">Вход</a></div>
+                <div class="header__block__ad btn btn--header"><a href="#">Подать объявление</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--END header-->
+      <section class="catalog">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="catalog__navigation"><a href="#">Главная<i class="fa fa-long-arrow-right"></i></a><a href="#">Каталог</a></div>
+            </div>
+            <div class="col-xs-12">
+              <div class="catalog__sorting">
+                <div class="row">
+                  <div class="col-md-5 col-xs-12">
+                    <div class="catalog__sorting__block">
+                      <div class="heading heading--variants">
+                        <h2>Аренда квартир без посредников</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-xs-12">
+                    <div class="catalog__sorting__block">
+                      <p>3184 квартиры отсортированы</p><a href="#" class="active">по дате добавления</a><a href="#">по цене</a><a href="#" class="active">по площади</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 col-sm-4 col-xs-12">
+              <div class="catalog__filter">
+                <div class="catalog__filter__tabs">
+                  <ul class="catalog__filter__tabs__caption">
+                    <li class="active">Список</li>
+                    <li>Карта</li>
+                  </ul>
+                  <div class="catalog__filter__tabs__content active">
+                    <form class="form">
+                      <div class="form__type checkbox checkbox--type"><input type="checkbox" id="apartments"><label for="apartments">Квартиры</label><input type="checkbox" id="room" checked><label for="room">Комнаты</label></div>
+                      <div class="form__where">
+                        <p>Где?</p>
+                        <div class="form__where__block"><input type="text" placeholder="По названию"><input type="button" id="button"><label for="button"><i class="fa fa-search"></i></label></div>
+                      </div>
+                      <div class="form__cost">
+                        <p>Диапазон цены</p>
+                        <div class="row">
+                          <div class="col-xs-6"><span>от</span><input type="number" class="from"></div>
+                          <div class="col-xs-6 end-xs"><span>до</span><input type="number" class="to"></div>
+                        </div>
+                        <div class="form__cost__range"><input type="range" id="cost">
+                          <div class="row">
+                            <div class="col-xs-6"><span>0</span></div>
+                            <div class="col-xs-6 end-xs"><span>95.000</span></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form__source checkbox">
+                        <p>Источник</p><input type="checkbox" id="source1" checked><label for="source1">Только проверенные</label><input type="checkbox" id="source2"><label for="source2">Собственник</label><input type="checkbox" id="source3"><label for="source3">Ищу соседа</label>
+                        <input
+                          type="checkbox" id="source4"><label for="source4">Дов. управление</label><input type="checkbox" id="source5"><label for="source5">Вместо себя</label></div>
+                    </form>
+                    <form class="form">
+                      <div class="form__extra form__extra1">
+                        <h4>Дополнительно<i class="fa fa-caret-down"></i></h4>
+                        <div class="form__extra__block">
+                          <div class="form__extra__block__area">
+                            <p>Площадь, м2</p>
+                            <div class="row">
+                              <div class="col-xs-6"><span>от</span><input type="number"></div>
+                              <div class="col-xs-6 end-xs"><span>до</span><input type="number"></div>
+                            </div>
+                          </div>
+                          <div class="form__extra__block__floor">
+                            <p>Этаж</p>
+                            <div class="row">
+                              <div class="col-xs-6"><span>от</span><input type="number"></div>
+                              <div class="col-xs-6 end-xs"><span>до</span><input type="number"></div>
+                            </div>
+                          </div>
+                          <div class="form__extra__block__comfort checkbox">
+                            <p>Удобства</p><input type="checkbox" id="comfort1" checked><label for="comfort1">Балкон</label><input type="checkbox" id="comfort2"><label for="comfort2">Холодильник</label><input type="checkbox" id="comfort3"><label for="comfort3">Телевизор</label>
+                            <input
+                              type="checkbox" id="comfort4"><label for="comfort4">Кондиционер</label><input type="checkbox" id="comfort5"><label for="comfort5">Стиралка</label><input type="checkbox" id="comfort5"><label for="comfort5">Бойлер</label></div>
+                        </div>
+                      </div>
+                      <div class="form__extra form__extra2">
+                        <h4>Дополнительно<i class="fa fa-caret-down"></i></h4>
+                        <div class="form__extra__block">
+                          <div class="form__extra__block__area">
+                            <p>Площадь, м2</p>
+                            <div class="row">
+                              <div class="col-xs-6"><span>от</span><input type="number"></div>
+                              <div class="col-xs-6 end-xs"><span>до</span><input type="number"></div>
+                            </div>
+                          </div>
+                          <div class="form__extra__block__floor">
+                            <p>Этаж</p>
+                            <div class="row">
+                              <div class="col-xs-6"><span>от</span><input type="number"></div>
+                              <div class="col-xs-6 end-xs"><span>до</span><input type="number"></div>
+                            </div>
+                          </div>
+                          <div class="form__extra__block__comfort checkbox">
+                            <p>Удобства</p><input type="checkbox" id="comfort1" checked><label for="comfort1">Балкон</label><input type="checkbox" id="comfort2"><label for="comfort2">Холодильник</label><input type="checkbox" id="comfort3"><label for="comfort3">Телевизор</label>
+                            <input
+                              type="checkbox" id="comfort4"><label for="comfort4">Кондиционер</label><input type="checkbox" id="comfort5"><label for="comfort5">Стиралка</label><input type="checkbox" id="comfort5"><label for="comfort5">Бойлер</label></div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="catalog__filter__tabs__content"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9 col-sm-8 col-xs-12">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="catalog__variants">
+                    <div class="catalog__variants__block">
+                      <div class="catalog__variants__block__swiper">
+                        <div class="swiper-container swiper-container--4">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div style="background: url(img/home.jpg)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper1.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper2.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper1.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper2.png)" class="swiper-slide__block"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-pagination swiper-pagination--4"></div>
+                          <div class="swiper-button-next swiper-button-next--4"><i class="icon icon-arrow"></i></div>
+                          <div class="swiper-button-prev swiper-button-prev--4"><i class="icon icon-arrow"></i></div>
+                        </div>
+                      </div>
+                      <div class="catalog__variants__block__content">
+                        <div class="catalog__variants__block__content__title"> <a href="#">Комната в аренду в 6-комнатной квартире</a></div>
+                        <div class="catalog__variants__block__content__info">
+                          <div class="row middle-xs">
+                            <div class="col-xs-12">
+                              <p><i class="icon icon-stop"></i>Без залога</p>
+                              <p> <i class="icon icon-metro"></i>Коммендантский проспект</p>
+                              <p><i class="icon icon-location"></i>Невский пр-кт, 156, Санкт-Петербург Невский пр-кт, 156, Санкт-Петербург Невский пр-кт, 156, Санкт-Петербург Невский пр-кт, 156, Санкт-Петербург</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="catalog__variants__block__content__bottom">
+                          <div class="row middle-xs">
+                            <div class="col-xs-6"><span>13 000 ₽</span></div>
+                            <div class="col-xs-6 end-xs"><a><i class="icon icon-like"></i>В избранное</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog__variants__block">
+                      <div class="catalog__variants__block__swiper">
+                        <div class="swiper-container swiper-container--4">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper1.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper2.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper1.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper2.png)" class="swiper-slide__block"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-pagination swiper-pagination--4"></div>
+                          <div class="swiper-button-next swiper-button-next--4"><i class="icon icon-arrow"></i></div>
+                          <div class="swiper-button-prev swiper-button-prev--4"><i class="icon icon-arrow"></i></div>
+                        </div>
+                      </div>
+                      <div class="catalog__variants__block__content">
+                        <div class="catalog__variants__block__content__title"> <a href="#">Комната в аренду в 6-комнатной квартире</a></div>
+                        <div class="catalog__variants__block__content__info">
+                          <div class="row middle-xs">
+                            <div class="col-xs-12">
+                              <p><i class="icon icon-stop"></i>Без залога</p>
+                              <p> <i class="icon icon-metro"></i>Коммендантский проспект</p>
+                              <p><i class="icon icon-location"></i>Невский пр-кт, 156, Санкт-Петербург</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="catalog__variants__block__content__bottom">
+                          <div class="row middle-xs">
+                            <div class="col-xs-6"><span>13 000 ₽</span></div>
+                            <div class="col-xs-6 end-xs"><a><i class="icon icon-like"></i>В избранное</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog__variants__block">
+                      <div class="catalog__variants__block__swiper">
+                        <div class="swiper-container swiper-container--4">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper1.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper2.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper1.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper2.png)" class="swiper-slide__block"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-pagination swiper-pagination--4"></div>
+                          <div class="swiper-button-next swiper-button-next--4"><i class="icon icon-arrow"></i></div>
+                          <div class="swiper-button-prev swiper-button-prev--4"><i class="icon icon-arrow"></i></div>
+                        </div>
+                      </div>
+                      <div class="catalog__variants__block__content">
+                        <div class="catalog__variants__block__content__title"> <a href="#">Комната в аренду в 6-комнатной квартире</a></div>
+                        <div class="catalog__variants__block__content__info">
+                          <div class="row middle-xs">
+                            <div class="col-xs-12">
+                              <p><i class="icon icon-stop"></i>Без залога</p>
+                              <p> <i class="icon icon-metro"></i>Коммендантский проспект</p>
+                              <p><i class="icon icon-location"></i>Невский пр-кт, 156, Санкт-Петербург</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="catalog__variants__block__content__bottom">
+                          <div class="row middle-xs">
+                            <div class="col-xs-6"><span>13 000 ₽</span></div>
+                            <div class="col-xs-6 end-xs"><a><i class="icon icon-like"></i>В избранное</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog__variants__block">
+                      <div class="catalog__variants__block__swiper">
+                        <div class="swiper-container swiper-container--4">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper1.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper2.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper1.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper2.png)" class="swiper-slide__block"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-pagination swiper-pagination--4"></div>
+                          <div class="swiper-button-next swiper-button-next--4"><i class="icon icon-arrow"></i></div>
+                          <div class="swiper-button-prev swiper-button-prev--4"><i class="icon icon-arrow"></i></div>
+                        </div>
+                      </div>
+                      <div class="catalog__variants__block__content">
+                        <div class="catalog__variants__block__content__title"> <a href="#">Комната в аренду в 6-комнатной квартире</a></div>
+                        <div class="catalog__variants__block__content__info">
+                          <div class="row middle-xs">
+                            <div class="col-xs-12">
+                              <p><i class="icon icon-stop"></i>Без залога</p>
+                              <p> <i class="icon icon-metro"></i>Коммендантский проспект</p>
+                              <p><i class="icon icon-location"></i>Невский пр-кт, 156, Санкт-Петербург</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="catalog__variants__block__content__bottom">
+                          <div class="row middle-xs">
+                            <div class="col-xs-6"><span>13 000 ₽</span></div>
+                            <div class="col-xs-6 end-xs"><a><i class="icon icon-like"></i>В избранное</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog__variants__block">
+                      <div class="catalog__variants__block__swiper">
+                        <div class="swiper-container swiper-container--4">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper1.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper2.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper1.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper2.png)" class="swiper-slide__block"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-pagination swiper-pagination--4"></div>
+                          <div class="swiper-button-next swiper-button-next--4"><i class="icon icon-arrow"></i></div>
+                          <div class="swiper-button-prev swiper-button-prev--4"><i class="icon icon-arrow"></i></div>
+                        </div>
+                      </div>
+                      <div class="catalog__variants__block__content">
+                        <div class="catalog__variants__block__content__title"> <a href="#">Комната в аренду в 6-комнатной квартире</a></div>
+                        <div class="catalog__variants__block__content__info">
+                          <div class="row middle-xs">
+                            <div class="col-xs-12">
+                              <p><i class="icon icon-stop"></i>Без залога</p>
+                              <p> <i class="icon icon-metro"></i>Коммендантский проспект</p>
+                              <p><i class="icon icon-location"></i>Невский пр-кт, 156, Санкт-Петербург</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="catalog__variants__block__content__bottom">
+                          <div class="row middle-xs">
+                            <div class="col-xs-6"><span>13 000 ₽</span></div>
+                            <div class="col-xs-6 end-xs"><a><i class="icon icon-like"></i>В избранное</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog__variants__block">
+                      <div class="catalog__variants__block__swiper">
+                        <div class="swiper-container swiper-container--4">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper1.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper2.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper1.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper2.png)" class="swiper-slide__block"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-pagination swiper-pagination--4"></div>
+                          <div class="swiper-button-next swiper-button-next--4"><i class="icon icon-arrow"></i></div>
+                          <div class="swiper-button-prev swiper-button-prev--4"><i class="icon icon-arrow"></i></div>
+                        </div>
+                      </div>
+                      <div class="catalog__variants__block__content">
+                        <div class="catalog__variants__block__content__title"> <a href="#">Комната в аренду в 6-комнатной квартире</a></div>
+                        <div class="catalog__variants__block__content__info">
+                          <div class="row middle-xs">
+                            <div class="col-xs-12">
+                              <p><i class="icon icon-stop"></i>Без залога</p>
+                              <p> <i class="icon icon-metro"></i>Коммендантский проспект</p>
+                              <p><i class="icon icon-location"></i>Невский пр-кт, 156, Санкт-Петербург</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="catalog__variants__block__content__bottom">
+                          <div class="row middle-xs">
+                            <div class="col-xs-6"><span>13 000 ₽</span></div>
+                            <div class="col-xs-6 end-xs"><a><i class="icon icon-like"></i>В избранное</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog__variants__block">
+                      <div class="catalog__variants__block__swiper">
+                        <div class="swiper-container swiper-container--4">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper1.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper2.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper1.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper2.png)" class="swiper-slide__block"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-pagination swiper-pagination--4"></div>
+                          <div class="swiper-button-next swiper-button-next--4"><i class="icon icon-arrow"></i></div>
+                          <div class="swiper-button-prev swiper-button-prev--4"><i class="icon icon-arrow"></i></div>
+                        </div>
+                      </div>
+                      <div class="catalog__variants__block__content">
+                        <div class="catalog__variants__block__content__title"> <a href="#">Комната в аренду в 6-комнатной квартире</a></div>
+                        <div class="catalog__variants__block__content__info">
+                          <div class="row middle-xs">
+                            <div class="col-xs-12">
+                              <p><i class="icon icon-stop"></i>Без залога</p>
+                              <p> <i class="icon icon-metro"></i>Коммендантский проспект</p>
+                              <p><i class="icon icon-location"></i>Невский пр-кт, 156, Санкт-Петербург</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="catalog__variants__block__content__bottom">
+                          <div class="row middle-xs">
+                            <div class="col-xs-6"><span>13 000 ₽</span></div>
+                            <div class="col-xs-6 end-xs"><a><i class="icon icon-like"></i>В избранное</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog__variants__block">
+                      <div class="catalog__variants__block__swiper">
+                        <div class="swiper-container swiper-container--4">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper1.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper2.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper1.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper2.png)" class="swiper-slide__block"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-pagination swiper-pagination--4"></div>
+                          <div class="swiper-button-next swiper-button-next--4"><i class="icon icon-arrow"></i></div>
+                          <div class="swiper-button-prev swiper-button-prev--4"><i class="icon icon-arrow"></i></div>
+                        </div>
+                      </div>
+                      <div class="catalog__variants__block__content">
+                        <div class="catalog__variants__block__content__title"> <a href="#">Комната в аренду в 6-комнатной квартире</a></div>
+                        <div class="catalog__variants__block__content__info">
+                          <div class="row middle-xs">
+                            <div class="col-xs-12">
+                              <p><i class="icon icon-stop"></i>Без залога</p>
+                              <p> <i class="icon icon-metro"></i>Коммендантский проспект</p>
+                              <p><i class="icon icon-location"></i>Невский пр-кт, 156, Санкт-Петербург</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="catalog__variants__block__content__bottom">
+                          <div class="row middle-xs">
+                            <div class="col-xs-6"><span>13 000 ₽</span></div>
+                            <div class="col-xs-6 end-xs"><a><i class="icon icon-like"></i>В избранное</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog__variants__block">
+                      <div class="catalog__variants__block__swiper">
+                        <div class="swiper-container swiper-container--4">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper1.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper2.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper1.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper2.png)" class="swiper-slide__block"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-pagination swiper-pagination--4"></div>
+                          <div class="swiper-button-next swiper-button-next--4"><i class="icon icon-arrow"></i></div>
+                          <div class="swiper-button-prev swiper-button-prev--4"><i class="icon icon-arrow"></i></div>
+                        </div>
+                      </div>
+                      <div class="catalog__variants__block__content">
+                        <div class="catalog__variants__block__content__title"> <a href="#">Комната в аренду в 6-комнатной квартире</a></div>
+                        <div class="catalog__variants__block__content__info">
+                          <div class="row middle-xs">
+                            <div class="col-xs-12">
+                              <p><i class="icon icon-stop"></i>Без залога</p>
+                              <p> <i class="icon icon-metro"></i>Коммендантский проспект</p>
+                              <p><i class="icon icon-location"></i>Невский пр-кт, 156, Санкт-Петербург</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="catalog__variants__block__content__bottom">
+                          <div class="row middle-xs">
+                            <div class="col-xs-6"><span>13 000 ₽</span></div>
+                            <div class="col-xs-6 end-xs"><a><i class="icon icon-like"></i>В избранное</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog__variants__block">
+                      <div class="catalog__variants__block__swiper">
+                        <div class="swiper-container swiper-container--4">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper1.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper2.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper1.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper2.png)" class="swiper-slide__block"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-pagination swiper-pagination--4"></div>
+                          <div class="swiper-button-next swiper-button-next--4"><i class="icon icon-arrow"></i></div>
+                          <div class="swiper-button-prev swiper-button-prev--4"><i class="icon icon-arrow"></i></div>
+                        </div>
+                      </div>
+                      <div class="catalog__variants__block__content">
+                        <div class="catalog__variants__block__content__title"> <a href="#">Комната в аренду в 6-комнатной квартире</a></div>
+                        <div class="catalog__variants__block__content__info">
+                          <div class="row middle-xs">
+                            <div class="col-xs-12">
+                              <p><i class="icon icon-stop"></i>Без залога</p>
+                              <p> <i class="icon icon-metro"></i>Коммендантский проспект</p>
+                              <p><i class="icon icon-location"></i>Невский пр-кт, 156, Санкт-Петербург</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="catalog__variants__block__content__bottom">
+                          <div class="row middle-xs">
+                            <div class="col-xs-6"><span>13 000 ₽</span></div>
+                            <div class="col-xs-6 end-xs"><a><i class="icon icon-like"></i>В избранное</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog__variants__block">
+                      <div class="catalog__variants__block__swiper">
+                        <div class="swiper-container swiper-container--4">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper1.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper2.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper1.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper2.png)" class="swiper-slide__block"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-pagination swiper-pagination--4"></div>
+                          <div class="swiper-button-next swiper-button-next--4"><i class="icon icon-arrow"></i></div>
+                          <div class="swiper-button-prev swiper-button-prev--4"><i class="icon icon-arrow"></i></div>
+                        </div>
+                      </div>
+                      <div class="catalog__variants__block__content">
+                        <div class="catalog__variants__block__content__title"> <a href="#">Комната в аренду в 6-комнатной квартире</a></div>
+                        <div class="catalog__variants__block__content__info">
+                          <div class="row middle-xs">
+                            <div class="col-xs-12">
+                              <p><i class="icon icon-stop"></i>Без залога</p>
+                              <p> <i class="icon icon-metro"></i>Коммендантский проспект</p>
+                              <p><i class="icon icon-location"></i>Невский пр-кт, 156, Санкт-Петербург</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="catalog__variants__block__content__bottom">
+                          <div class="row middle-xs">
+                            <div class="col-xs-6"><span>13 000 ₽</span></div>
+                            <div class="col-xs-6 end-xs"><a><i class="icon icon-like"></i>В избранное</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog__variants__block">
+                      <div class="catalog__variants__block__swiper">
+                        <div class="swiper-container swiper-container--4">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper1.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper2.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper1.png)" class="swiper-slide__block"></div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div style="background: url(img/ads__swiper2.png)" class="swiper-slide__block"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-pagination swiper-pagination--4"></div>
+                          <div class="swiper-button-next swiper-button-next--4"><i class="icon icon-arrow"></i></div>
+                          <div class="swiper-button-prev swiper-button-prev--4"><i class="icon icon-arrow"></i></div>
+                        </div>
+                      </div>
+                      <div class="catalog__variants__block__content">
+                        <div class="catalog__variants__block__content__title"> <a href="#">Комната в аренду в 6-комнатной квартире</a></div>
+                        <div class="catalog__variants__block__content__info">
+                          <div class="row middle-xs">
+                            <div class="col-xs-12">
+                              <p><i class="icon icon-stop"></i>Без залога</p>
+                              <p> <i class="icon icon-metro"></i>Коммендантский проспект</p>
+                              <p><i class="icon icon-location"></i>Невский пр-кт, 156, Санкт-Петербург</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="catalog__variants__block__content__bottom">
+                          <div class="row middle-xs">
+                            <div class="col-xs-6"><span>13 000 ₽</span></div>
+                            <div class="col-xs-6 end-xs"><a><i class="icon icon-like"></i>В избранное</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12"><a href="#" class="btn btn--variants">Загрузить еще</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer footer__variants">
+        <div class="footer--index">
+          <div class="container">
+            <div class="row start-md center-xs">
+              <div class="col-md-3 col-xs-12 last-xs first-md">
+                <div class="footer__logo"><i class="icon icon-logo--footer"></i>
+                  <p>© 2018 «Уютное гнездышко»</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-xs-6">
+                <h4>Разделы сайта</h4><a href="#">Снять</a><br><a href="#">Сдать</a></div>
+              <div class="col-md-3 col-sm-4 col-xs-6">
+                <h4>Техподдержка</h4>
+                <p>Email: <a href="mailto:ello@gnezdo.ru">hello@gnezdo.ru</a></p>
+                <p>Telegram: <a href="tel:8981783457">8981783457</a></p>
+              </div>
+              <div class="col-md-3 col-sm-4 col-xs-6">
+                <h4>Мы в соцсетях</h4>
+                <div class="footer__social"><a href="#"><i class="icon icon-telegram"></i></a><a href="#"><i class="icon icon-vk"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer--variants">
+          <div class="container">
+            <div class="footer__top">
+              <div class="row start-md center-xs">
+                <div class="col-md-3 col-xs-12 last-xs first-md">
+                  <div class="footer__top__block">
+                    <div class="footer__top__block__logo"><i class="icon icon-logo--footer"></i></div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                  <div class="footer__top__block">
+                    <div class="footer__top__block__siction">
+                      <h4>Разделы сайта</h4><a href="#">Найти квартиру</a><a href="#">Сдать квартиру</a><a href="#">Вопросы и ответы</a></div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                  <div class="footer__top__block">
+                    <div class="footer__top__block__info"></div>
+                    <h4>Информация</h4><a href="#">Пользовательское соглашение</a><a href="#">Обработка персональных данных</a><a href="#">Договор аренды</a></div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                  <div class="footer__top__block">
+                    <div class="footer__top__block__social">
+                      <h4>Мы в соцсетях</h4><a href="#"><i class="icon icon-telegram"></i></a><a href="#"><i class="icon icon-vk"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__bottom">
+              <div class="row start-md center-xs">
+                <div class="col-md-3 col-sm-4 col-xs-6 col-md-offset-3"><a href="mailto:ello@gnezdo.ru">hello@gnezdo.ru</a></div>
+                <div class="col-md-3 col-sm-4 col-xs-6"><a href="tel:89817834576">8 (981) 783-45-76</a></div>
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                  <p>© 2018 «Уютное гнездышко»</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!--END out-->
+    <!--LOAD SCRIPTS-->
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+
+</html>

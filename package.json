@@ -68,6 +68,7 @@
   },
   "dependencies": {
     "swiper": "^4.1.6",
-    "tether": "^1.4.3"
+    "tether": "^1.4.3",
+    "ion-rangeslider": "^2.2.0"
   }
 }

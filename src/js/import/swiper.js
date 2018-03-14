@@ -33,3 +33,13 @@ var swiper = new Swiper('.swiper-container--3', {
     prevEl: '.swiper-button-prev--3',
   },
 });
+
+var swiper = new Swiper('.swiper-container--4', {
+  pagination: {
+    el: '.swiper-pagination--4',
+  },
+  navigation: {
+    nextEl: '.swiper-button-next--4',
+    prevEl: '.swiper-button-prev--4',
+  },
+});

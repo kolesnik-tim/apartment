@@ -1,0 +1,169 @@
+.form
+  border-radius: 6px
+  background-color: $white
+  box-shadow: 0px 3px 3px 0 rgba(0, 0, 0, 0.1)
+  margin: 15px 0
+  &__type
+    border-bottom: 1px solid $pale-grey-two
+    padding: 25px
+  &__where
+    border-bottom: 1px solid $pale-grey-two
+    padding: 25px
+    p
+      font-size: 13px
+      font-weight: 600
+      line-height: 1.63
+      color: $charcoal-grey
+      padding-bottom: 10px
+    &__block
+      position: relative
+      input[type="text"]
+        width: 100%
+        padding: 13px 20px
+        font-size: 13px
+        color: $charcoal-grey
+        padding-right: 40px
+        border: solid 2px $pale-grey-two
+        border-radius: 6px
+      input[type="button"]
+        position: absolute
+        right: 0
+        width: 40px
+        height: 100%
+        border-left: 1px solid $pale-grey-two
+        background: none
+        cursor: pointer
+        &:hover
+          & + label
+            color: $tealish-three
+      label
+        position: absolute
+        right: 13px
+        top: 50%
+        color: $pale-grey-two
+        transform: translateY(-50%)
+        cursor: pointer
+        transition: all 0.3s
+  &__cost
+    border-bottom: 1px solid $pale-grey-two
+    padding: 25px
+    p
+      font-size: 13px
+      font-weight: 600
+      line-height: 1.63
+      color: $charcoal-grey
+      padding-bottom: 14px
+    span
+      font-size: 13px
+      line-height: 2.69
+      color: $charcoal-grey
+      padding-right: 10px
+    input[type="number"]
+      max-width: 75px
+      padding: 15px 15px
+      border: solid 2px $pale-grey-two
+      border-radius: 6px
+      font-size: 13px
+      color: $charcoal-grey
+      margin-bottom: 30px
+      +r(767)
+        max-width: 100%
+        width: 100%
+    &__range
+      input[type="range"]
+        width: 100%
+      span
+        padding: 0 !important
+      .irs.js-irs-0
+        height: 5px
+        background-color: rgba(34, 34, 34, 0.1)
+      .irs-bar
+        height: 5px !important
+        background: linear-gradient(to right, #28c9c8, $greenish-teal)
+        padding-right: 0 !important
+      .irs-from
+        top: -5px
+        width: 15px
+        height: 15px
+        background-color: $tealish-four
+        box-shadow: 0px 1px 6px 0 $black-30
+        border: solid 3px $white
+        border-radius: 100%
+        z-index: 99
+        color: transparent !important
+        cursor: pointer
+        visibility: visible !important
+      .irs-to
+        top: -5px
+        width: 15px
+        height: 15px
+        background-color: $tealish-four
+        box-shadow: 0px 1px 6px 0 $black-30
+        border: solid 3px $white
+        border-radius: 100%
+        z-index: 99
+        color: transparent !important
+        cursor: pointer
+        visibility: visible !important
+      .irs-single
+        color: transparent !important
+  &__source
+    padding: 25px
+
+
+.form
+  &__extra
+    &.active
+      h4
+        color: $tealish-three
+        i
+          transform: rotate(180deg)
+          color: $tealish-three
+    h4
+      padding: 25px 30px
+      font-size: 13px
+      font-weight: 600
+      line-height: 1.62
+      color: $charcoal-grey
+      position: relative
+      border-bottom: 1px solid $pale-grey-two
+      padding: 25px
+      display: flex
+      align-items: center
+      transition: all 0.3s
+      cursor: pointer
+      i
+        color: $bluish-grey
+        position: absolute
+        right: 25px
+        transition: all 0.3s
+    &__block
+      display: none
+      &__area, &__floor
+        border-bottom: 1px solid $pale-grey-two
+        padding: 25px
+        p
+          font-size: 13px
+          font-weight: 600
+          line-height: 1.63
+          color: $charcoal-grey
+          padding-bottom: 14px
+        span
+          font-size: 13px
+          line-height: 2.69
+          color: $charcoal-grey
+          padding-right: 10px
+        input[type="number"]
+          max-width: 75px
+          padding: 15px 15px
+          border: solid 2px $pale-grey-two
+          border-radius: 6px
+          font-size: 13px
+          color: $charcoal-grey
+          +r(767)
+            max-width: 100%
+            width: 100%
+      &__comfort
+        border-bottom: 1px solid $pale-grey-two
+        padding: 25px
+            
