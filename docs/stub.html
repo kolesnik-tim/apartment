@@ -49,25 +49,40 @@
       </header>
       <!--END header-->
       <section class="stub">
-        <div class="container">
-          <div class="row center-xs">
-            <div class="col-xs-12">
-              <div class="stub__logo"><a href="index.html"><img src="img/logo.svg" alt=""></a></div>
-            </div>
-            <div class="col-xs-12 start-xs">
-              <div class="stub__content">
-                <h3>Скоро тут будет сайт!</h3>
-                <p>А пока вы можете оставить адрес вашей электронной почты и одним из первых узнать о запуске!</p>
-                <form><input type="email" placeholder="Электронная почта"><input type="submit" value="Подписаться"></form>
+        <div class="stub__video"><video src="img/stub.mp4" loop></video></div>
+        <div class="stub__block">
+          <div class="container">
+            <div class="row center-xs">
+              <div class="col-xs-12">
+                <div class="stub__logo"><a href="index.html"><img src="img/logo.svg" alt=""></a></div>
               </div>
-            </div>
-            <div class="col-xs-12">
-              <div class="stub__social">
-                <p>Мы в соцсетях</p><a href="#"><i class="icon icon-telegram"></i></a><a href="#"><i class="icon icon-vk"></i></a></div>
+              <div class="col-xs-12 flex middle-xs center-xs">
+                <div class="stub__content">
+                  <h3>Скоро тут будет сайт!</h3>
+                  <p>А пока вы можете оставить адрес вашей электронной почты и одним из первых узнать о запуске!</p>
+                  <form><input type="email" placeholder="Электронная почта" class="email"><input type="submit" value="Подписаться" id="stub-pop-up"></form>
+                </div>
+              </div>
+              <div class="col-xs-12 bottom-xs">
+                <div class="stub__social">
+                  <div class="stub__social__block">
+                    <p>Мы в соцсетях</p><a href="#"><i class="icon icon-telegram"></i></a><a href="#"><i class="icon icon-vk"></i></a></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      <div id="stub" class="pop-up">
+        <div class="container">
+          <div class="row center-xs">
+            <div class="col-xs-12">
+              <h4>Спасибо! </h4>
+              <p>В день запуска сайта мы отправим вам письмо с уведомлением.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!--END out-->
     <!--LOAD SCRIPTS-->

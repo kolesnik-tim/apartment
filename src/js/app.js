@@ -3,7 +3,19 @@ import './import/swiper.js';
 import './import/tabs.js';
 import './import/rangeslider';
 import './import/folding-blocks';
+import './import/pop-up';
 
+
+//stub
+let windowWidth = $(window).width();
+if (windowWidth <= 767) {
+  $('.email').focus(function() {
+    $('.stub__social__block').fadeOut();
+  });
+  $('.email').blur(function() {
+    $('.stub__social__block').fadeIn();
+  });
+}
 
 // Якорь
 $('.intro__btn').on('click','a', function(event) {

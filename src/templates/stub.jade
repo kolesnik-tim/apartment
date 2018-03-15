@@ -5,23 +5,29 @@ headerStubClass: header--stub
 extends layouts/_layout
 block content
   section.stub
-    .container
-      .row.center-xs
-        .col-xs-12
-          .stub__logo
-            a(href="index.html")
-              img(src="img/logo.svg", alt="")
-        .col-xs-12.start-xs
-          .stub__content
-            h3 Скоро тут будет сайт!
-            p А пока вы можете оставить адрес вашей электронной почты и одним из первых узнать о запуске!
-            form
-              input(type="email" placeholder="Электронная почта")
-              input(type="submit" value="Подписаться")
-        .col-xs-12
-          .stub__social
-            p Мы в соцсетях
-            a(href="#")
-              i.icon.icon-telegram
-            a(href="#")
-              i.icon.icon-vk
+    .stub__video
+      video(src="img/stub.mp4" , loop)
+    .stub__block
+      .container
+        .row.center-xs
+          .col-xs-12
+            .stub__logo
+              a(href="index.html")
+                img(src="img/logo.svg", alt="")
+          .col-xs-12.flex.middle-xs.center-xs
+            .stub__content
+              h3 Скоро тут будет сайт!
+              p А пока вы можете оставить адрес вашей электронной почты и одним из первых узнать о запуске!
+              form
+                input(type="email" placeholder="Электронная почта").email
+                input(type="submit" value="Подписаться" id="stub-pop-up")
+          .col-xs-12.bottom-xs
+            .stub__social
+              .stub__social__block
+                p Мы в соцсетях
+                a(href="#")
+                  i.icon.icon-telegram
+                a(href="#")
+                  i.icon.icon-vk
+  include page/pop-up
+  
