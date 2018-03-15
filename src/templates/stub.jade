@@ -1,0 +1,27 @@
+---
+title: Index Page
+headerStubClass: header--stub
+---
+extends layouts/_layout
+block content
+  section.stub
+    .container
+      .row.center-xs
+        .col-xs-12
+          .stub__logo
+            a(href="index.html")
+              img(src="img/logo.svg", alt="")
+        .col-xs-12.start-xs
+          .stub__content
+            h3 Очень скоро тут появится заголовок!
+            p А пока оставьте свой электронный адрес, чтобы быть в курсе новостей. Обещаем не рассылать спам и передавать ваш адрес третьим лицам.
+            form
+              input(type="email" placeholder="Электронная почта")
+              input(type="submit" value="Подписаться")
+        .col-xs-12
+          .stub__social
+            p Мы в соцсетях
+            a(href="#")
+              i.icon.icon-telegram
+            a(href="#")
+              i.icon.icon-vk
