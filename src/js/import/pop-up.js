@@ -4,12 +4,11 @@ $('#stub-pop-up').parent().click(function(e) {
 });
 
 $('#stub-pop-up').on('click', function() {
-  // $('.mobile-menu__bg').fadeIn();
+  $('.pop-up-bg').fadeIn();
   $('#stub').fadeIn();
-  console.log('erferf');
 });
 $('.pop-up__close').on('click', function() {
-  $('.pop-up').fadeOut();
-  $('.mobile-menu__bg').fadeOut();
+  $('.stub-pop-up').fadeOut();
+  $('.pop-up-bg').fadeOut();
 });
 
