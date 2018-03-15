@@ -11,4 +11,3 @@ $('.pop-up-bg').on('click', function() {
   $('.pop-up').fadeOut();
   $('.pop-up-bg').fadeOut();
 });
-
