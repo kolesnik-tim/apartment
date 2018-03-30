@@ -7,6 +7,55 @@
   +r(767)
     padding-top: 350px
     padding-bottom: 30px
+  &__form
+    width: 80%
+    position: relative
+    display: flex
+    left: 50%
+    transform: translate(-50%)
+    +r(1024)
+      width: 97%
+    +r(767)
+      display: none
+    input
+      height: 40px
+    &__room
+      width: 30%
+      margin-right: 5px
+    &__station
+      margin-right: 5px
+      width: 40%
+      input[type="text"]
+        font-size: 13px
+        color: $slate-grey
+        padding: 15px
+        margin-right: 5px
+        width: 100%
+        display: block
+        margin-bottom: 5px
+      &--cost
+        display: flex
+        input[type="number"]
+          padding: 15px
+          width: 70%
+          border-right: 1px solid $white-two
+    &__view
+      width: 30%
+      input[type="submit"]
+        padding: 12px 0px
+        width: 100%
+        border-bottom-right-radius: 5px
+        background-image: linear-gradient(to bottom, $greenish-teal, $tealish-two)
+        font-family: 'Roboto'
+        font-size: 15px
+        font-weight: bold
+        color: $white
+        outline: none
+        transition: all 0.3s
+        cursor: pointer
+        margin-top: 5px
+        &:hover
+          color: $charcoal-grey
   &__mobile
     display: none
     +r(767)
@@ -19,51 +68,6 @@
     line-height: 1.28
     color: $white
     padding-bottom: 40px
-  .form--top
-    display: flex
-    justify-content: center
-    +r(1024)
-      display: block
-      width: 60%
-      position: relative
-      left: 50%
-      transform: translate(-50%)
-    +r(767)
-      display: none
-    select
-      width: 100%
-      background: $white
-      border-radius: 0
-      border: none
-      padding: 25px 0
-      font-size: 15px
-      text-align-last: center
-      text-align: center
-      -webkit-appearance: none
-      -moz-appearance: none
-      appearance: none
-      &:first-child
-        border-top-left-radius: 5px
-        border-top-right-radius: 5px
-    input
-      padding: 25px 75px
-      border-top-right-radius: 5px
-      border-bottom-right-radius: 5px
-      background-image: linear-gradient(to bottom, $greenish-teal, $tealish-two)
-      font-family: Roboto
-      font-size: 15px
-      font-weight: bold
-      color: $white
-      outline: none
-      transition: all 0.3s
-      cursor: pointer
-      &:hover
-        color: $charcoal-grey
-      +r(1024)
-        width: 100%
-        padding: 25px 0
-        border-top-right-radius: 0
-        border-bottom-left-radius: 5px
   &__btn
     position: absolute
     width: 100%

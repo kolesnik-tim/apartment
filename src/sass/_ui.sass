@@ -123,6 +123,7 @@ p
 			margin-left: 0
 			width: 100%
 .checkbox
+	width: 100%
 	p
 		font-size: 13px
 		font-weight: 600
@@ -130,6 +131,8 @@ p
 		color: $charcoal-grey
 		padding-bottom: 14px
 	input[type="checkbox"]
+		display: none
+	input[type="radio"]
 		display: none
 	input[type="checkbox"] + label
 		width: 100%
@@ -158,10 +161,52 @@ p
 	input[type="checkbox"]:checked + label::before
 		background-color: $tealish-three
 		color: $white
+	input[type="radio"] + label
+		padding: 13px 0px
+		width: 50%
+		background: $white
+		color: $slate-grey
+		display: inline-block
+		font-size: 13px
+		cursor: pointer
+		transition: all 0.3s
+		height: 40px
+	input[type="radio"] + label:last-child
+		border-top-right-radius: 5px
+	input[type="radio"] + label::before
+		display: none
+	input[type="radio"]:checked + label
+		background: $tealish
+		color: $white
 	&--type
 		input[type="checkbox"] + label
 			width: 50%
 			padding: 0
+	&--intro
+		width: auto
+		display: flex
+		input[type="radio"] + label
+			padding: 13px 0px
+			width: 70%
+			height: 40px
+			border-right: 1px solid $white-two
+		input[type="radio"] + label:last-child
+			border-radius: 0
+			border-right: 1px solid $white
+			width: 100%
+		input[type="radio"] + label:nth-child(2)
+			border-bottom-left-radius: 5px
+		input[type="radio"]:checked + label:last-child
+			border-right: 1px solid $tealish-three
+		input[type="radio"]:checked + label:nth-child(2)
+			border-right: 1px solid $tealish-three
+	&--intro--check
+		input[type="checkbox"] + label
+			background: $white
+			height: 40px
+			padding: 10px 0px
+			width: 100%
+
 
 
 

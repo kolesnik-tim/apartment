@@ -33,11 +33,6 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 col-xs-12 center-xs last-xs">
-              <div class="header__block">
-                <div class="header__block__get"><a href="#" class="active">Снять</a><a href="stub.html">Сдать</a></div>
-              </div>
-            </div>
             <div class="col-md-4 col-sm-6 col-xs-12 end-xs last-md">
               <div class="header__block header__block--mobile">
                 <div class="header__block__user"><a href="#">Вход</a></div>
@@ -53,15 +48,19 @@
           <div class="row center-xs">
             <div class="col-xs-12">
               <h1>Снять комнату, квартиру или дом</h1>
-              <form class="form form--top"><select class="select select-last"><option>Тип жилья</option><option>Тип жилья1</option><option>Тип жилья2</option></select><select class="select select-last"><option>Станция метро</option><option>Станция метро1</option><option>Станция метро2</option></select>
-                <select
-                  class="select select-last">
-                  <option>Количество комнат</option>
-                  <option>Количество комнат1</option>
-                  <option>Количество комнат2</option>
-                  </select><select class="select select-last"><option>Бюджет</option><option>Бюджет1</option><option>Бюджет2</option></select><select class="select select-last"><option>Срок аренды</option><option>Срок аренды1</option><option>Срок аренды2</option></select>
-                  <input
-                    type="submit" value="Найти"></form>
+              <form class="intro__form">
+                <div class="intro__form__room"><select class="select select-last"><option>Квартира</option><option>Дом</option><option>Комната</option></select>
+                  <div class="checkbox checkbox--intro"><input type="radio" name="room" id="room1" checked><label for="room1">1</label><input type="radio" name="room" id="room2"><label for="room2">2</label><input type="radio" name="room" id="room3"><label for="room3">3</label><input type="radio"
+                      name="room" id="room4"><label for="room4">4+</label><input type="radio" name="room" id="studio"><label for="studio">Студия</label></div>
+                </div>
+                <div class="intro__form__station"><input type="text" name="station" placeholder="Метро">
+                  <div class="intro__form__station--cost"><input type="number" name="cost" placeholder="От"><input type="number" name="cost" placeholder="До">
+                    <div class="checkbox checkbox--intro--check"><input type="checkbox" name="pledge" id="pledge" checked><label for="pledge">Без залога</label></div>
+                  </div>
+                </div>
+                <div class="intro__form__view">
+                  <div class="checkbox"><input type="radio" id="long" name="time" checked><label for="long">Долгосрочно</label><input type="radio" id="daily" name="time"><label for="daily">Посуточно</label></div><input type="submit" value="Найти"></div>
+              </form>
             </div>
           </div>
           <div class="intro__mobile">
@@ -433,63 +432,39 @@
         </div>
       </section>
       <footer class="footer">
-        <div class="footer--index">
-          <div class="container">
+        <div class="container">
+          <div class="footer__top">
             <div class="row start-md center-xs">
               <div class="col-md-3 col-xs-12 last-xs first-md">
-                <div class="footer__logo"><i class="icon icon-logo--footer"></i>
-                  <p>© 2018 «Уютное гнездышко»</p>
+                <div class="footer__top__block">
+                  <div class="footer__top__block__logo"><i class="icon icon-logo--footer"></i></div>
                 </div>
               </div>
               <div class="col-md-3 col-sm-4 col-xs-6">
-                <h4>Разделы сайта</h4><a href="#">Снять</a><br><a href="#">Сдать</a></div>
-              <div class="col-md-3 col-sm-4 col-xs-6">
-                <h4>Техподдержка</h4>
-                <p>Email: <a href="mailto:ello@gnezdo.ru">hello@gnezdo.ru</a></p>
-                <p>Telegram: <a href="tel:8981783457">8981783457</a></p>
+                <div class="footer__top__block">
+                  <div class="footer__top__block__siction">
+                    <h4>Разделы сайта</h4><a href="#">Найти квартиру</a><a href="#">Сдать квартиру</a><a href="#">Вопросы и ответы</a></div>
+                </div>
               </div>
               <div class="col-md-3 col-sm-4 col-xs-6">
-                <h4>Мы в соцсетях</h4>
-                <div class="footer__social"><a href="#"><i class="icon icon-telegram"></i></a><a href="#"><i class="icon icon-vk"></i></a></div>
+                <div class="footer__top__block">
+                  <div class="footer__top__block__info"></div>
+                  <h4>Информация</h4><a href="#">Пользовательское соглашение</a><a href="#">Обработка персональных данных</a><a href="#">Договор аренды</a></div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-xs-6">
+                <div class="footer__top__block">
+                  <div class="footer__top__block__social">
+                    <h4>Мы в соцсетях</h4><a href="#"><i class="icon icon-telegram"></i></a><a href="#"><i class="icon icon-vk"></i></a></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="footer--variants">
-          <div class="container">
-            <div class="footer__top">
-              <div class="row start-md center-xs">
-                <div class="col-md-3 col-xs-12 last-xs first-md">
-                  <div class="footer__top__block">
-                    <div class="footer__top__block__logo"><i class="icon icon-logo--footer"></i></div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                  <div class="footer__top__block">
-                    <div class="footer__top__block__siction">
-                      <h4>Разделы сайта</h4><a href="#">Найти квартиру</a><a href="#">Сдать квартиру</a><a href="#">Вопросы и ответы</a></div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                  <div class="footer__top__block">
-                    <div class="footer__top__block__info"></div>
-                    <h4>Информация</h4><a href="#">Пользовательское соглашение</a><a href="#">Обработка персональных данных</a><a href="#">Договор аренды</a></div>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                  <div class="footer__top__block">
-                    <div class="footer__top__block__social">
-                      <h4>Мы в соцсетях</h4><a href="#"><i class="icon icon-telegram"></i></a><a href="#"><i class="icon icon-vk"></i></a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="footer__bottom">
-              <div class="row start-md center-xs">
-                <div class="col-md-3 col-sm-4 col-xs-6 col-md-offset-3"><a href="mailto:ello@gnezdo.ru">hello@gnezdo.ru</a></div>
-                <div class="col-md-3 col-sm-4 col-xs-6"><a href="tel:89817834576">8 (981) 783-45-76</a></div>
-                <div class="col-md-3 col-sm-4 col-xs-12">
-                  <p>© 2018 «Уютное гнездышко»</p>
-                </div>
+          <div class="footer__bottom">
+            <div class="row start-md center-xs">
+              <div class="col-md-3 col-sm-4 col-xs-6 col-md-offset-3"><a href="mailto:ello@gnezdo.ru">hello@gnezdo.ru</a></div>
+              <div class="col-md-3 col-sm-4 col-xs-6"><a href="tel:89817834576">8 (981) 783-45-76</a></div>
+              <div class="col-md-3 col-sm-4 col-xs-12">
+                <p>© 2018 «Уютное гнездышко»</p>
               </div>
             </div>
           </div>

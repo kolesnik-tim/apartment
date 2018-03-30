@@ -3,28 +3,38 @@ section.intro
     .row.center-xs
       .col-xs-12
         h1 Снять комнату, квартиру или дом
-        form.form.form--top
-          select.select.select-last
-            option Тип жилья
-            option Тип жилья1
-            option Тип жилья2
-          select.select.select-last
-            option Станция метро
-            option Станция метро1
-            option Станция метро2
-          select.select.select-last
-            option Количество комнат
-            option Количество комнат1
-            option Количество комнат2
-          select.select.select-last
-            option Бюджет
-            option Бюджет1
-            option Бюджет2
-          select.select.select-last
-            option Срок аренды
-            option Срок аренды1
-            option Срок аренды2
-          input(type="submit" value="Найти")
+        form.intro__form
+          .intro__form__room
+            select.select.select-last
+              option Квартира
+              option Дом
+              option Комната
+            .checkbox.checkbox--intro
+              input(type="radio" name="room" id="room1" checked)
+              label(for="room1") 1
+              input(type="radio" name="room" id="room2")
+              label(for="room2") 2
+              input(type="radio" name="room" id="room3")
+              label(for="room3") 3
+              input(type="radio" name="room" id="room4")
+              label(for="room4") 4+
+              input(type="radio" name="room" id="studio")
+              label(for="studio") Студия
+          .intro__form__station
+            input(type="text" name="station" placeholder="Метро")
+            .intro__form__station--cost
+              input(type="number" name="cost" placeholder="От")
+              input(type="number" name="cost" placeholder="До")
+              .checkbox.checkbox--intro--check
+                input(type="checkbox" name="pledge" id="pledge" checked)
+                label(for="pledge") Без залога
+          .intro__form__view
+            .checkbox
+              input(type="radio" id="long" name="time" checked)
+              label(for="long") Долгосрочно
+              input(type="radio" id="daily" name="time")
+              label(for="daily") Посуточно
+            input(type="submit" value="Найти")
     .intro__mobile
       .row
         .col-md-3.col-sm-4.col-xs-12
