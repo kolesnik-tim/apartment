@@ -1,9 +1,77 @@
 .pop-up-bg
-.pop-up#stub
-  .pop-up__close
-    span
+.pop-up-stub#stub
   .container
     .row.center-xs
       .col-xs-12
         h4 Спасибо! 
         p В день запуска сайта мы отправим вам письмо с уведомлением.
+.pop-up#entry
+  .pop-up__close
+    span
+  form.form.form--pop-up
+    .row
+      .col-xs-12
+        h3 Вход
+        .pop-up__block-input
+          input(type="email" placeholder="Электронная почта")
+        .pop-up__block-input
+          input(type="text" placeholder="Пароль")
+        .row
+          .col-xs-6
+            .checkbox
+              input(type="checkbox" id="memori" checked)
+              label(for="memori") Запомнить меня
+          .col-xs-6.end-xs
+            a(href="#restoring" data-pop) Не помню пароль
+      .col-xs-12.center-xs
+        input(type="submit" value="Авторизоваться").btn.btn--pop-up
+        p Вы здесь впервые?
+          a(href="#registration" data-pop) Зарегистрируйтесь
+  .pop-up__social
+    .row
+      .col-xs-12.center-xs
+        p Быстрый вход через социальные сети
+        .pop-up__social__link
+          a(href="#")
+            i.fa.fa-vk
+          a(href="#")
+            i.fa.fa-facebook
+          a(href="#")
+            i.fa.fa-google-plus
+
+.pop-up#registration
+  .pop-up__close
+    span
+  form.form.form--pop-up
+    .row
+      .col-xs-12
+        h3 Регистрация
+        .pop-up__block-input
+          input(type="email" placeholder="Электронная почта")
+        .pop-up__block-input
+          input(type="text" placeholder="Пароль")
+      .col-xs-12.center-xs
+        input(type="submit" value="Зарегистрироваться").btn.btn--pop-up
+        p Регистрируясь, вы принимаете условия пользовательского соглашения и соглашаетесь на обработку ваших персональных данных
+  .pop-up__social
+    .row
+      .col-xs-12.center-xs
+        p Быстрая регистрация через социальные сети
+        .pop-up__social__link
+          a(href="#")
+            i.fa.fa-vk
+          a(href="#")
+            i.fa.fa-facebook
+          a(href="#")
+            i.fa.fa-google-plus
+.pop-up#restoring
+  .pop-up__close
+    span
+  form.form.form--pop-up
+    .row
+      .col-xs-12
+        h3 Восстановление
+        .pop-up__block-input
+          input(type="email" placeholder="Электронная почта")
+      .col-xs-12.center-xs
+        input(type="submit" value="Отправить пароль").btn.btn--pop-up

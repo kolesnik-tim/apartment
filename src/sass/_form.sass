@@ -3,6 +3,53 @@
   background-color: $white
   box-shadow: 0px 3px 3px 0 rgba(0, 0, 0, 0.1)
   margin: 15px 0
+  &--pop-up
+    box-shadow: none
+    margin: 0
+    padding: 20px 30px
+    padding-bottom: 20px
+    .row
+      height: auto
+    h3
+      font-size: 24px
+      font-weight: bold
+      color: $charcoal-grey-two
+      padding-bottom: 30px
+    .pop-up__block-input
+      border: solid 2px $pale-grey-two
+      border-radius: 6px
+      margin-bottom: 10px
+      position: relative
+      input
+        width: 100%
+        padding: 15px 25px
+        padding-right: 60px
+        border-radius: 6px
+        font-size: 14px
+        color: $bluish-grey-70
+      input::-webkit-input-placeholder
+        color: $bluish-grey-70
+      input::-moz-placeholder
+        color: $bluish-grey-70
+      input:-moz-placeholder
+        color: $bluish-grey-70
+      input:-ms-input-placeholder
+        color: $bluish-grey-70
+      i
+        position: absolute
+        right: 20px
+    a
+      font-size: 12px
+      color: $tealish
+      line-height: 40px
+      border-bottom: 1px solid $tealish
+      &:hover
+        border-bottom: none
+    p
+      font-size: 13px
+      color: $charcoal-grey-two
+      a
+        margin-left: 5px
   &__type
     border-bottom: 1px solid $pale-grey-two
     padding: 25px
@@ -75,6 +122,9 @@
       span
         padding: 0 !important
       .irs.js-irs-0
+        height: 5px
+        background-color: rgba(34, 34, 34, 0.1)
+      .irs.js-irs-1
         height: 5px
         background-color: rgba(34, 34, 34, 0.1)
       .irs-bar

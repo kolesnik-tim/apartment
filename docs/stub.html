@@ -35,7 +35,7 @@
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12 end-xs last-md">
               <div class="header__block header__block--mobile">
-                <div class="header__block__user"><a href="#">Вход</a></div>
+                <div class="header__block__user"><a href="#entry" data-pop>Вход</a></div>
                 <div class="header__block__ad btn btn--header"><a href="#">Подать объявление</a></div>
               </div>
             </div>
@@ -69,8 +69,7 @@
         </div>
       </section>
       <div class="pop-up-bg"></div>
-      <div id="stub" class="pop-up">
-        <div class="pop-up__close"><span></span></div>
+      <div id="stub" class="pop-up-stub">
         <div class="container">
           <div class="row center-xs">
             <div class="col-xs-12">
@@ -79,6 +78,70 @@
             </div>
           </div>
         </div>
+      </div>
+      <div id="entry" class="pop-up">
+        <div class="pop-up__close"><span></span></div>
+        <form class="form form--pop-up">
+          <div class="row">
+            <div class="col-xs-12">
+              <h3>Вход</h3>
+              <div class="pop-up__block-input"><input type="email" placeholder="Электронная почта"></div>
+              <div class="pop-up__block-input"><input type="text" placeholder="Пароль"></div>
+              <div class="row">
+                <div class="col-xs-6">
+                  <div class="checkbox"><input type="checkbox" id="memori" checked><label for="memori">Запомнить меня</label></div>
+                </div>
+                <div class="col-xs-6 end-xs"><a href="#restoring" data-pop>Не помню пароль</a></div>
+              </div>
+            </div>
+            <div class="col-xs-12 center-xs"><input type="submit" value="Авторизоваться" class="btn btn--pop-up">
+              <p>Вы здесь впервые?<a href="#registration" data-pop>Зарегистрируйтесь</a></p>
+            </div>
+          </div>
+        </form>
+        <div class="pop-up__social">
+          <div class="row">
+            <div class="col-xs-12 center-xs">
+              <p>Быстрый вход через социальные сети</p>
+              <div class="pop-up__social__link"><a href="#"><i class="fa fa-vk"></i></a><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-google-plus"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="registration" class="pop-up">
+        <div class="pop-up__close"><span></span></div>
+        <form class="form form--pop-up">
+          <div class="row">
+            <div class="col-xs-12">
+              <h3>Регистрация</h3>
+              <div class="pop-up__block-input"><input type="email" placeholder="Электронная почта"></div>
+              <div class="pop-up__block-input"><input type="text" placeholder="Пароль"></div>
+            </div>
+            <div class="col-xs-12 center-xs"><input type="submit" value="Зарегистрироваться" class="btn btn--pop-up">
+              <p>Регистрируясь, вы принимаете условия пользовательского соглашения и соглашаетесь на обработку ваших персональных данных</p>
+            </div>
+          </div>
+        </form>
+        <div class="pop-up__social">
+          <div class="row">
+            <div class="col-xs-12 center-xs">
+              <p>Быстрая регистрация через социальные сети</p>
+              <div class="pop-up__social__link"><a href="#"><i class="fa fa-vk"></i></a><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-google-plus"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="restoring" class="pop-up">
+        <div class="pop-up__close"><span></span></div>
+        <form class="form form--pop-up">
+          <div class="row">
+            <div class="col-xs-12">
+              <h3>Восстановление</h3>
+              <div class="pop-up__block-input"><input type="email" placeholder="Электронная почта"></div>
+            </div>
+            <div class="col-xs-12 center-xs"><input type="submit" value="Отправить пароль" class="btn btn--pop-up"></div>
+          </div>
+        </form>
       </div>
     </div>
     <!--END out-->

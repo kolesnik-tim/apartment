@@ -1,24 +1,27 @@
 section.catalog
+  .catalog__map
+    iframe(src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d5080.039136006351!2d30.4903354!3d50.4593603!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1522434154870" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen)
   .container
-    .row
-      .col-xs-12
-        .catalog__navigation
-          a(href="#") Главная
-            i.fa.fa-long-arrow-right
-          a(href="#") Каталог
-      .col-xs-12
-        .catalog__sorting
-          .row
-            .col-md-5.col-xs-12
-              .catalog__sorting__block
-                .heading.heading--variants
-                  h2 Аренда квартир без посредников
-            .col-md-7.col-xs-12
-              .catalog__sorting__block
-                p 3184 квартиры отсортированы
-                a(href="#").active по дате добавления
-                a(href="#") по цене
-                a(href="#").active по площади
+    .catalog--none
+      .row
+        .col-xs-12
+          .catalog__navigation
+            a(href="#") Главная
+              i.fa.fa-long-arrow-right
+            a(href="#") Каталог
+        .col-xs-12
+          .catalog__sorting
+            .row
+              .col-md-5.col-xs-12
+                .catalog__sorting__block
+                  .heading.heading--variants
+                    h2 Аренда квартир без посредников
+              .col-md-7.col-xs-12
+                .catalog__sorting__block
+                  p 3184 квартиры отсортированы
+                  a(href="#").active по дате добавления
+                  a(href="#") по цене
+                  a(href="#").active по площади
     .row
       .col-md-3.col-sm-4.col-xs-12
         .catalog__filter
@@ -141,7 +144,121 @@ section.catalog
                       label(for="comfort5") Стиралка
                       input(type="checkbox" id="comfort5")
                       label(for="comfort5") Бойлер
-            .catalog__filter__tabs__content
+            //- .catalog__filter__tabs__content
+            //-   form.form
+            //-     .form__type.checkbox.checkbox--type
+            //-       input(type="checkbox" id="apartments")
+            //-       label(for="apartments") Квартиры
+            //-       input(type="checkbox" id="room" checked)
+            //-       label(for="room") Комнаты
+            //-     .form__where
+            //-       p Где?
+            //-       .form__where__block
+            //-         input(type="text" placeholder="По названию")
+            //-         input(type="button" id="button")
+            //-         label(for="button")
+            //-           i.fa.fa-search
+            //-     .form__cost
+            //-       p Диапазон цены
+            //-       .row
+            //-         .col-xs-6
+            //-           span от
+            //-           input(type="number").from1
+            //-         .col-xs-6.end-xs
+            //-           span до
+            //-           input(type="number").to1
+            //-       .form__cost__range
+            //-         input(type="range" id="cost1")
+            //-         .row
+            //-           .col-xs-6
+            //-             span 0
+            //-           .col-xs-6.end-xs
+            //-             span 95.000
+            //-     .form__source.checkbox
+            //-       p Источник
+            //-       input(type="checkbox" id="source1" checked)
+            //-       label(for="source1") Только проверенные
+            //-       input(type="checkbox" id="source2")
+            //-       label(for="source2") Собственник
+            //-       input(type="checkbox" id="source3")
+            //-       label(for="source3") Ищу соседа
+            //-       input(type="checkbox" id="source4")
+            //-       label(for="source4") Дов. управление
+            //-       input(type="checkbox" id="source5")
+            //-       label(for="source5") Вместо себя
+            //-   form.form
+            //-     .form__extra.form__extra1
+            //-       h4 Дополнительно
+            //-         i.fa.fa-caret-down
+            //-       .form__extra__block
+            //-         .form__extra__block__area
+            //-           p Площадь, м2
+            //-           .row
+            //-             .col-xs-6
+            //-               span от
+            //-               input(type="number")
+            //-             .col-xs-6.end-xs
+            //-               span до
+            //-               input(type="number")
+            //-         .form__extra__block__floor
+            //-           p Этаж
+            //-           .row
+            //-             .col-xs-6
+            //-               span от
+            //-               input(type="number")
+            //-             .col-xs-6.end-xs
+            //-               span до
+            //-               input(type="number")
+            //-         .form__extra__block__comfort.checkbox
+            //-           p Удобства
+            //-           input(type="checkbox" id="comfort1" checked)
+            //-           label(for="comfort1") Балкон
+            //-           input(type="checkbox" id="comfort2")
+            //-           label(for="comfort2") Холодильник
+            //-           input(type="checkbox" id="comfort3")
+            //-           label(for="comfort3") Телевизор
+            //-           input(type="checkbox" id="comfort4")
+            //-           label(for="comfort4") Кондиционер
+            //-           input(type="checkbox" id="comfort5")
+            //-           label(for="comfort5") Стиралка
+            //-           input(type="checkbox" id="comfort5")
+            //-           label(for="comfort5") Бойлер
+            //-     .form__extra.form__extra2
+            //-       h4 Дополнительно
+            //-         i.fa.fa-caret-down
+            //-       .form__extra__block
+            //-         .form__extra__block__area
+            //-           p Площадь, м2
+            //-           .row
+            //-             .col-xs-6
+            //-               span от
+            //-               input(type="number")
+            //-             .col-xs-6.end-xs
+            //-               span до
+            //-               input(type="number")
+            //-         .form__extra__block__floor
+            //-           p Этаж
+            //-           .row
+            //-             .col-xs-6
+            //-               span от
+            //-               input(type="number")
+            //-             .col-xs-6.end-xs
+            //-               span до
+            //-               input(type="number")
+            //-         .form__extra__block__comfort.checkbox
+            //-           p Удобства
+            //-           input(type="checkbox" id="comfort1" checked)
+            //-           label(for="comfort1") Балкон
+            //-           input(type="checkbox" id="comfort2")
+            //-           label(for="comfort2") Холодильник
+            //-           input(type="checkbox" id="comfort3")
+            //-           label(for="comfort3") Телевизор
+            //-           input(type="checkbox" id="comfort4")
+            //-           label(for="comfort4") Кондиционер
+            //-           input(type="checkbox" id="comfort5")
+            //-           label(for="comfort5") Стиралка
+            //-           input(type="checkbox" id="comfort5")
+            //-           label(for="comfort5") Бойлер
       .col-md-9.col-sm-8.col-xs-12
         include variants
         
