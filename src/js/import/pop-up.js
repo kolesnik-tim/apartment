@@ -8,7 +8,7 @@ $('#stub-pop-up').on('click', function() {
   $('#stub').fadeIn();
 });
 $('.pop-up-bg').on('click', function() {
-  $('#stub').fadeOut();
+  $('#stub, .pop-up').fadeOut();
   $('.pop-up-bg').fadeOut();
 });
 

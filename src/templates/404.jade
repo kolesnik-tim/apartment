@@ -1,0 +1,33 @@
+---
+title: 404
+headerStubClass: header__404
+---
+extends layouts/_layout
+block content
+  section.page404
+    .page404__bg
+    .page404__content
+      .container
+        .row
+          .col-xs-5.center-xs
+            .page404__img
+              img(src="img/404.png", alt="")
+              p 404
+          .col-xs-7
+            .page404__text
+              h3 Что-то пошло не так...
+              p Извините, этот адрес больше не доступен. <br>Здесь несколько ссылок, которые, возможно, вы захотите посмотреть:
+              a(href="index.html")
+                span Главная страница
+              a(href="variants.html") 
+                span Каталог
+              a(href="#")
+                span Вопросы и ответы
+              .page404__text__help
+                p Если у вас есть проблемы с нашим сервисом, пожалуйста напишите 
+                  a(href="mailtoo:admin@gnezdo.ru") admin@gnezdo.ru
+
+
+
+  include partials/_footer
+  include page/pop-up
