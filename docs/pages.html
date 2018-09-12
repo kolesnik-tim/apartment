@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Все страницы</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;amp;subset=cyrillic-ext" rel="stylesheet">
+  </head>
+
+  <body>
+    <!--BEGIN out-->
+    <div class="out">
+      <!--BEGIN header-->
+      <header class="header header__variants">
+        <div class="container">
+          <div class="row between-xs">
+            <div class="col-md-4 col-sm-6 col-xs-12 center-xs start-sm">
+              <div class="header__block">
+                <div class="row middle-xs">
+                  <div class="col-sm-6 col-xs-5"><a href="index.html" class="header__block__logo"><img src="img/logo.svg" alt=""></a></div>
+                  <div class="col-sm-6 col-xs-7">
+                    <div class="header__block__location">
+                      <p>Санкт-Петербург<i class="fa fa-angle-down"></i></p>
+                      <div class="header__block__location__menu"><a href="#">Санкт-Петербург2</a><a href="#">Санкт-Петербург4</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 end-xs last-md">
+              <div class="header__block header__block--mobile">
+                <div class="header__block__user"><a href="#entry" data-pop>Вход</a></div>
+                <div class="header__block__ad btn btn--header"><a href="#">Подать объявление</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--END header-->
+      <div class="pages">
+        <ul>
+          <li><a href="index.html">Главная страница</a></li>
+          <li><a href="variants.html">Каталог</a></li>
+          <li><a href="stub.html">Для еще не доработанных страниц</a></li>
+          <li><a href="404.html">404</a></li>
+        </ul>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__top">
+            <div class="row start-md center-xs">
+              <div class="col-md-3 col-xs-12 last-xs first-md">
+                <div class="footer__top__block">
+                  <div class="footer__top__block__logo"><i class="icon icon-logo--footer"></i></div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-xs-6">
+                <div class="footer__top__block">
+                  <div class="footer__top__block__siction">
+                    <h4>Разделы сайта</h4><a href="#">Найти квартиру</a><a href="#">Сдать квартиру</a><a href="#">Вопросы и ответы</a></div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-xs-6">
+                <div class="footer__top__block">
+                  <div class="footer__top__block__info"></div>
+                  <h4>Информация</h4><a href="#">Пользовательское соглашение</a><a href="#">Обработка персональных данных</a><a href="#">Договор аренды</a></div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-xs-6">
+                <div class="footer__top__block">
+                  <div class="footer__top__block__social">
+                    <h4>Мы в соцсетях</h4><a href="#"><i class="icon icon-telegram"></i></a><a href="#"><i class="icon icon-vk"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="row start-md center-xs">
+              <div class="col-md-3 col-sm-4 col-xs-6 col-md-offset-3"><a href="mailto:ello@gnezdo.ru">hello@gnezdo.ru</a></div>
+              <div class="col-md-3 col-sm-4 col-xs-6"><a href="tel:89817834576">8 (981) 783-45-76</a></div>
+              <div class="col-md-3 col-sm-4 col-xs-12">
+                <p>© 2018 «Уютное гнездышко»</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="pop-up-bg"></div>
+      <div id="stub" class="pop-up-stub">
+        <div class="container">
+          <div class="row center-xs">
+            <div class="col-xs-12">
+              <h4>Спасибо! </h4>
+              <p>В день запуска сайта мы отправим вам письмо с уведомлением.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="entry" class="pop-up">
+        <div class="pop-up__close"><span></span></div>
+        <form class="form form--pop-up">
+          <div class="row">
+            <div class="col-xs-12">
+              <h3>Вход</h3>
+              <div class="pop-up__block-input"><input type="email" placeholder="Электронная почта"></div>
+              <div class="pop-up__block-input"><input type="text" placeholder="Пароль"></div>
+              <div class="row">
+                <div class="col-xs-6">
+                  <div class="checkbox"><input type="checkbox" id="memori" checked><label for="memori">Запомнить меня</label></div>
+                </div>
+                <div class="col-xs-6 end-xs"><a href="#restoring" data-pop>Не помню пароль</a></div>
+              </div>
+            </div>
+            <div class="col-xs-12 center-xs"><input type="submit" value="Авторизоваться" class="btn btn--pop-up">
+              <p>Вы здесь впервые?<a href="#registration" data-pop>Зарегистрируйтесь</a></p>
+            </div>
+          </div>
+        </form>
+        <div class="pop-up__social">
+          <div class="row">
+            <div class="col-xs-12 center-xs">
+              <p>Быстрый вход через социальные сети</p>
+              <div class="pop-up__social__link"><a href="#"><i class="fa fa-vk"></i></a><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-google-plus"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="registration" class="pop-up">
+        <div class="pop-up__close"><span></span></div>
+        <form class="form form--pop-up">
+          <div class="row">
+            <div class="col-xs-12">
+              <h3>Регистрация</h3>
+              <div class="pop-up__block-input"><input type="email" placeholder="Электронная почта"></div>
+              <div class="pop-up__block-input"><input type="text" placeholder="Пароль"></div>
+            </div>
+            <div class="col-xs-12 center-xs"><input type="submit" value="Зарегистрироваться" class="btn btn--pop-up">
+              <p>Регистрируясь, вы принимаете условия пользовательского соглашения и соглашаетесь на обработку ваших персональных данных</p>
+            </div>
+          </div>
+        </form>
+        <div class="pop-up__social">
+          <div class="row">
+            <div class="col-xs-12 center-xs">
+              <p>Быстрая регистрация через социальные сети</p>
+              <div class="pop-up__social__link"><a href="#"><i class="fa fa-vk"></i></a><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-google-plus"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="restoring" class="pop-up">
+        <div class="pop-up__close"><span></span></div>
+        <form class="form form--pop-up">
+          <div class="row">
+            <div class="col-xs-12">
+              <h3>Восстановление</h3>
+              <div class="pop-up__block-input"><input type="email" placeholder="Электронная почта"></div>
+            </div>
+            <div class="col-xs-12 center-xs"><input type="submit" value="Отправить пароль" class="btn btn--pop-up"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--END out-->
+    <!--LOAD SCRIPTS-->
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+
+</html>

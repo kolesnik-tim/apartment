@@ -1,0 +1,18 @@
+---
+title: Все страницы
+headerClass: header__variants
+---
+extends layouts/_layout
+block content
+  .pages
+    ul
+      li
+        a(href="index.html") Главная страница
+      li
+        a(href="variants.html") Каталог
+      li
+        a(href="stub.html") Для еще не доработанных страниц
+      li
+        a(href="404.html") 404
+  include partials/_footer
+  include page/pop-up
